@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let emojiViewController = EmojiController()
         
         window?.rootViewController = UINavigationController(rootViewController: emojiViewController)
+        
         return true
     }
 

@@ -8,17 +8,28 @@
 
 import UIKit
 
+
+let segueIdentifier = "EmojiControllerToCreatorSegue"
+let EmojiCellIndentifier = "EmojiCellIndentifier"
+
+
 class EmojiController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .gray
         createEmojiButton()
         navigationItem.leftBarButtonItem = editButtonItem
+        
         navigationItem.rightBarButtonItem = NewEmojiButton
     }
     
     
-    
+    override func tableView(_ tableView: UITableView, moveRowAt
+        fromIndexPath: IndexPath, to: IndexPath) {
+        let movedEmoji = emojis.remove(at: fromIndexPath.row)
+        emojis.insert(movedEmoji, at: to.row)
+        tableView.reloadData()
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
@@ -28,13 +39,20 @@ class EmojiController: UITableViewController {
         }
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
         
+
         
 
     }
-    let EmojiCellIndentifier = "EmojiCellIndentifier"
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: EmojiCellIndentifier)
@@ -46,6 +64,11 @@ class EmojiController: UITableViewController {
     }
     
     
+    
+    
+    
+    
+    
     let NewEmojiButton = UIBarButtonItem()
 
     func createEmojiButton() {
@@ -53,6 +76,9 @@ class EmojiController: UITableViewController {
         
     }
     
+   
+    
+
     
     
     
