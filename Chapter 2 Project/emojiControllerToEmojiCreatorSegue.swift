@@ -15,11 +15,11 @@ import UIKit
 class emojiViewToEmojiCreatorSegue: UIStoryboardSegue {
     override init(identifier: String?, source: UIViewController, destination: UIViewController) {
         
-    
-        
-        super.init(identifier: segueIdentifier, source: EmojiController(), destination: EmojiCreaterView())
+    super.init(identifier: "", source: UIViewController(), destination: UIViewController())
         
         
+        
+        let emojiViewToEmojiCreatorSegue = UIStoryboardSegue(identifier: segueIdentifier, source: EmojiController(), destination: emojiCreaterView())
         
         
 }
@@ -29,3 +29,4 @@ class emojiViewToEmojiCreatorSegue: UIStoryboardSegue {
     
 
 }
+

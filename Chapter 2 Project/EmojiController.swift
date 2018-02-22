@@ -9,7 +9,7 @@
 import UIKit
 
 
-let segueIdentifier = "EmojiControllerToCreatorSegue"
+let segueIdentifier = "emojiViewToEmojiCreatorSegue"
 let EmojiCellIndentifier = "EmojiCellIndentifier"
 
 
@@ -21,6 +21,7 @@ class EmojiController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
         
         navigationItem.rightBarButtonItem = NewEmojiButton
+        
     }
     
     
@@ -74,11 +75,8 @@ class EmojiController: UITableViewController {
     func createEmojiButton() {
         NewEmojiButton.title = "Add New Emoji"
         
+        
     }
-    
-   
-    
-
     
     
     
