@@ -17,11 +17,10 @@ class emojiViewToEmojiCreatorSegue: UIStoryboardSegue {
         
     
         
-        super.init(identifier: segueIdentifier, source: EmojiController(), destination: EmojiCreaterView())
+        super.init(identifier: "String", source: UIViewController(), destination: UIViewController())
         
         
-        
-        
+       
 }
     
     

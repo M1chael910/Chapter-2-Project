@@ -30,6 +30,7 @@ class Emoji {
 }
 
 
+
 var emojis: [Emoji] = [
     Emoji(symbol: "😀", name: "Grinning Face",
           description: "A typical smiley face.", usage: "happiness"),
@@ -53,6 +54,7 @@ var emojis: [Emoji] = [
     Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage:
         "completion"),
     Emoji(symbol: "😭", name: "Crying Emoji", description: "A crying person", usage: "When You are crying or sad")
+    
 ]
 
 
