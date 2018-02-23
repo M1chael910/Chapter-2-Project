@@ -9,7 +9,7 @@
 import UIKit
 
 
-let segueIdentifier = "EmojiControllerToCreatorSegue"
+let segueIdentifier = "emojiViewToEmojiCreatorSegue"
 let EmojiCellIndentifier = "EmojiCellIndentifier"
 
 

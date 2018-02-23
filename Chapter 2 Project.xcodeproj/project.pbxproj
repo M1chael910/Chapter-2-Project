@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40961041203F3AE6002DE01F /* emojiCreaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40961040203F3AE6002DE01F /* emojiCreaterView.swift */; };
 		7640AD48203DE25A00237208 /* emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7640AD47203DE25A00237208 /* emoji.swift */; };
-		76416ED4203F23500077C67B /* EmojiCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76416ED3203F23500077C67B /* EmojiCreatorView.swift */; };
 		76416ED6203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76416ED5203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift */; };
 		76F57981203C8B6C00035C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F57980203C8B6C00035C3B /* AppDelegate.swift */; };
 		76F57988203C8B6C00035C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F57987203C8B6C00035C3B /* Assets.xcassets */; };
@@ -17,8 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40961040203F3AE6002DE01F /* emojiCreaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiCreaterView.swift; sourceTree = "<group>"; };
 		7640AD47203DE25A00237208 /* emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoji.swift; sourceTree = "<group>"; };
-		76416ED3203F23500077C67B /* EmojiCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCreatorView.swift; sourceTree = "<group>"; };
 		76416ED5203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiControllerToEmojiCreatorSegue.swift; sourceTree = "<group>"; };
 		76F5797D203C8B6C00035C3B /* Chapter 2 Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F57980203C8B6C00035C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +58,9 @@
 		76F5797F203C8B6C00035C3B /* Chapter 2 Project */ = {
 			isa = PBXGroup;
 			children = (
+				40961040203F3AE6002DE01F /* emojiCreaterView.swift */,
 				76F57980203C8B6C00035C3B /* AppDelegate.swift */,
 				76F57992203C945900035C3B /* EmojiController.swift */,
-				76416ED3203F23500077C67B /* EmojiCreatorView.swift */,
 				7640AD47203DE25A00237208 /* emoji.swift */,
 				76416ED5203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift */,
 				76F57987203C8B6C00035C3B /* Assets.xcassets */,
@@ -143,7 +143,7 @@
 			files = (
 				76416ED6203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift in Sources */,
 				7640AD48203DE25A00237208 /* emoji.swift in Sources */,
-				76416ED4203F23500077C67B /* EmojiCreatorView.swift in Sources */,
+				40961041203F3AE6002DE01F /* emojiCreaterView.swift in Sources */,
 				76F57981203C8B6C00035C3B /* AppDelegate.swift in Sources */,
 				76F57993203C945900035C3B /* EmojiController.swift in Sources */,
 			);
