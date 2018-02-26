@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         let emojiViewController = EmojiController()
         
+        let EmojiCreaterView = emojiCreaterView()
+        
         window?.rootViewController = UINavigationController(rootViewController: emojiViewController)
         
         

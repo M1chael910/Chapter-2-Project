@@ -27,7 +27,7 @@ class EmojiController: UITableViewController {
         
     }
     
-    
+   
     override func tableView(_ tableView: UITableView, moveRowAt
         fromIndexPath: IndexPath, to: IndexPath) {
         let movedEmoji = emojis.remove(at: fromIndexPath.row)
@@ -55,18 +55,21 @@ class EmojiController: UITableViewController {
     }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        <#code#>
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: EmojiCellIndentifier)
         let emoji = emojis[indexPath.row]
-        tableView.separatorStyle = .none
+       
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
         cell.showsReorderControl = true
+        
         return cell
     }
-    
     
     
     
@@ -77,14 +80,14 @@ class EmojiController: UITableViewController {
 
     func createEmojiButton() {
         NewEmojiButton.title = "Add New Emoji"
-        NewEmojiButton.target = self
+        NewEmojiButton.target = self 
+        NewEmojiButton.action = #selector(MainToDetail)
     }
     
-    @objc func segue() {
-        let Segue = emojiViewToEmojiCreatorSegue(identifier: segueIdentifier, source: EmojiController(), destination: EmojiCreaterView())
-       
+   
+    @objc func MainToDetail() {
+        navigationController?.pushViewController(emojiCreaterView(), animated: true)
     }
-    
 
     
     
