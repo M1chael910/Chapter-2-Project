@@ -31,12 +31,12 @@ extension UIViewController {
     
     func createEmojiNameTextField() {
         emojiNameTextField.backgroundColor = .red
-        symbolTextField.backgroundColor = UIColor.lightGray
-        symbolTextField.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: 75)
-        symbolTextField.placeholder = "Enter The Name of Your new Emoji here!!"
-        symbolTextField.keyboardType = .default
-        symbolTextField.textAlignment = .center
-        symbolTextField.textColor = .red
+        emojiNameTextField.backgroundColor = UIColor.lightGray
+        emojiNameTextField.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: 75)
+        emojiNameTextField.placeholder = "Enter The Name of Your new Emoji here!!"
+        emojiNameTextField.keyboardType = .default
+        emojiNameTextField.textAlignment = .center
+        emojiNameTextField.textColor = .red
         view.addSubview(emojiNameTextField)
     }
     
@@ -44,12 +44,12 @@ extension UIViewController {
     
     
     func createEmojiDescriptionTextField() {
-        symbolTextField.backgroundColor = UIColor.blue
-        symbolTextField.frame = CGRect(x: 0, y: 300, width: view.frame.width, height: 75)
-        symbolTextField.placeholder = "Enter a description for Your emoji"
-        symbolTextField.keyboardType = .default
-        symbolTextField.textAlignment = .center
-        symbolTextField.textColor = .green
+        emojiDescriptionTextField.backgroundColor = UIColor.blue
+        emojiDescriptionTextField.frame = CGRect(x: 0, y: 300, width: view.frame.width, height: 75)
+        
+        emojiDescriptionTextField.keyboardType = .default
+        emojiDescriptionTextField.textAlignment = .center
+        emojiDescriptionTextField.textColor = .green
         
         
         view.addSubview(emojiDescriptionTextField)
@@ -60,12 +60,12 @@ extension UIViewController {
     
     
     func createEmoijiUsageTextField() {
-        symbolTextField.backgroundColor = UIColor.lightGray
-        symbolTextField.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 75)
-        symbolTextField.placeholder = "Enter Your New Emoji Here!!!"
-        symbolTextField.keyboardType = .default
-        symbolTextField.textAlignment = .center
-        symbolTextField.textColor = .green
+        emojiUsageTextField.backgroundColor = UIColor.lightGray
+        emojiUsageTextField.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 75)
+        emojiUsageTextField.
+        emojiUsageTextField.keyboardType = .default
+        emojiUsageTextField.textAlignment = .center
+        emojiUsageTextField.textColor = .green
         
         
         view.addSubview(emojiUsageTextField)
@@ -77,12 +77,10 @@ extension UIViewController {
     
     
     func createAddEmojiButton() {
-        symbolTextField.backgroundColor = UIColor.lightGray
-        symbolTextField.frame = CGRect(x: view.frame.width - 100, y: 600, width: 100, height: 75)
-        symbolTextField.placeholder = "Enter Your New Emoji Here!!!"
-        symbolTextField.keyboardType = .default
-        symbolTextField.textAlignment = .center
-        symbolTextField.textColor = .green
+        addEmojiButton.backgroundColor = UIColor.lightGray
+        addEmojiButton.frame = CGRect(x: view.frame.width - 100, y: 600, width: 100, height: 75)
+        
+        
         
         view.addSubview(addEmojiButton)
     }
