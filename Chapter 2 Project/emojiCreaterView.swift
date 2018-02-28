@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+
+
+
+
 let emojiDescriptionTextField = UITextView()
 let emojiNameTextField = UITextField()
 let symbolTextField = UITextField()
@@ -15,21 +20,35 @@ let symbolTextField = UITextField()
 let addEmojiButton = UIButton()
 let emojiUsageTextField = UITextView()
 
-class emojiCreaterView: UIViewController {
+
+
+
+class emojiCreaterView: UIViewController, UITextViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        view.backgroundColor = .white
         
+        navigationItem.title = "Create A New Emoji"
+        
+    
+        view.backgroundColor = UIColor.cyan
+        hideKeyboardWhenTappedAround()
         createEmoijiUsageTextField()
         createAddEmojiButton()
         createEmojiNameTextField()
         createEmojiDescriptionTextField()
         createSymbolTextField()
-    }
-    
-    
+        
 
+    }
+
+    
+    
+    
+    
+  
+    
+    
+    
     
 }
 

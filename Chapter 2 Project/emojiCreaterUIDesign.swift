@@ -10,7 +10,8 @@ import UIKit
 
 
 
-extension UIViewController {
+
+extension emojiCreaterView {
     
     
     
@@ -30,7 +31,7 @@ extension UIViewController {
     
     
     func createEmojiNameTextField() {
-        emojiNameTextField.backgroundColor = .red
+        
         emojiNameTextField.backgroundColor = UIColor.lightGray
         emojiNameTextField.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: 75)
         emojiNameTextField.placeholder = "Enter The Name of Your new Emoji here!!"
@@ -44,13 +45,13 @@ extension UIViewController {
     
     
     func createEmojiDescriptionTextField() {
-        emojiDescriptionTextField.backgroundColor = UIColor.blue
+        
+        emojiDescriptionTextField.backgroundColor = UIColor.lightGray
         emojiDescriptionTextField.frame = CGRect(x: 0, y: 300, width: view.frame.width, height: 75)
         
         emojiDescriptionTextField.keyboardType = .default
         emojiDescriptionTextField.textAlignment = .center
         emojiDescriptionTextField.textColor = .green
-        
         
         view.addSubview(emojiDescriptionTextField)
     }
@@ -62,7 +63,6 @@ extension UIViewController {
     func createEmoijiUsageTextField() {
         emojiUsageTextField.backgroundColor = UIColor.lightGray
         emojiUsageTextField.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 75)
-        emojiUsageTextField.
         emojiUsageTextField.keyboardType = .default
         emojiUsageTextField.textAlignment = .center
         emojiUsageTextField.textColor = .green
@@ -78,12 +78,16 @@ extension UIViewController {
     
     func createAddEmojiButton() {
         addEmojiButton.backgroundColor = UIColor.lightGray
-        addEmojiButton.frame = CGRect(x: view.frame.width - 100, y: 600, width: 100, height: 75)
-        
+        addEmojiButton.frame = CGRect(x: (view.frame.width/2) - 100, y: 600, width: 200, height: 75)
+        addEmojiButton.titleLabel?.textColor = .yellow
+        addEmojiButton.setTitle("Add New Emoji", for: .normal)
         
         
         view.addSubview(addEmojiButton)
     }
+    
+    
+    
     
     
     
