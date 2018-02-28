@@ -10,66 +10,44 @@ import UIKit
 
 
 
-class emojiCreaterView: UIViewController {
+
+
+
+let emojiDescriptionTextField = UITextView()
+let emojiNameTextField = UITextField()
+let symbolTextField = UITextField()
+
+let addEmojiButton = UIButton()
+let emojiUsageTextField = UITextView()
+
+
+
+
+class emojiCreaterView: UIViewController, UITextViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Create A New Emoji"
+        
     
-        view.backgroundColor = .white
-    
+        view.backgroundColor = UIColor.cyan
+        hideKeyboardWhenTappedAround()
+        createEmoijiUsageTextField()
+        createAddEmojiButton()
+        createEmojiNameTextField()
+        createEmojiDescriptionTextField()
+        createSymbolTextField()
         
-        
-        
-        
-        
-        
-        let label = UILabel(frame: CGRect(x: 150, y: 300, width: 50, height: 50))
-        label.backgroundColor = .red
-        view.addSubview(label)
+
     }
-    
-    
-    
-    let symbolTextField = UITextField()
-    
-    func createSymbolTextField() {
-        symbolTextField.backgroundColor = .blue
-    }
-    
-    
 
     
-    let emojiNameTextField = UITextField()
-    
-    func createEmojiNameTextField() {
-        emojiNameTextField.backgroundColor = .red
-    }
     
     
     
-    let emojiDescriptionTextField = UITextView()
-    
-    func createEmojiDescriptionTextField() {
-        
-    }
+  
     
     
-    
-    let emojiUsageTextField = UITextView()
-    
-    func createEmoijiUsageTextField() {
-        
-    }
-    
-    
-    let addEmojiButton = UIButton()
-    
-    
-    
-    func createAddEmojiButton() {
-        
-        
-        
-    }
     
     
 }

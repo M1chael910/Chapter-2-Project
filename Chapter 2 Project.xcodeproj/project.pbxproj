@@ -10,6 +10,8 @@
 		40961041203F3AE6002DE01F /* emojiCreaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40961040203F3AE6002DE01F /* emojiCreaterView.swift */; };
 		7640AD48203DE25A00237208 /* emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7640AD47203DE25A00237208 /* emoji.swift */; };
 		76416ED6203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76416ED5203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift */; };
+		7680C4752045CBC20039E10A /* emojiCreaterUIDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7680C4742045CBC20039E10A /* emojiCreaterUIDesign.swift */; };
+		76F5488E204711BC00477D5C /* LowerKeyboardFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5488D204711BC00477D5C /* LowerKeyboardFunction.swift */; };
 		76F57981203C8B6C00035C3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F57980203C8B6C00035C3B /* AppDelegate.swift */; };
 		76F57988203C8B6C00035C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F57987203C8B6C00035C3B /* Assets.xcassets */; };
 		76F5798B203C8B6C00035C3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F57989203C8B6C00035C3B /* LaunchScreen.storyboard */; };
@@ -20,6 +22,8 @@
 		40961040203F3AE6002DE01F /* emojiCreaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiCreaterView.swift; sourceTree = "<group>"; };
 		7640AD47203DE25A00237208 /* emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emoji.swift; sourceTree = "<group>"; };
 		76416ED5203F2BF40077C67B /* emojiControllerToEmojiCreatorSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiControllerToEmojiCreatorSegue.swift; sourceTree = "<group>"; };
+		7680C4742045CBC20039E10A /* emojiCreaterUIDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiCreaterUIDesign.swift; sourceTree = "<group>"; };
+		76F5488D204711BC00477D5C /* LowerKeyboardFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerKeyboardFunction.swift; sourceTree = "<group>"; };
 		76F5797D203C8B6C00035C3B /* Chapter 2 Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 2 Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F57980203C8B6C00035C3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76F57987203C8B6C00035C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				40961040203F3AE6002DE01F /* emojiCreaterView.swift */,
+				7680C4742045CBC20039E10A /* emojiCreaterUIDesign.swift */,
+				76F5488D204711BC00477D5C /* LowerKeyboardFunction.swift */,
 				76F57980203C8B6C00035C3B /* AppDelegate.swift */,
 				76F57992203C945900035C3B /* EmojiController.swift */,
 				7640AD47203DE25A00237208 /* emoji.swift */,
@@ -145,7 +151,9 @@
 				7640AD48203DE25A00237208 /* emoji.swift in Sources */,
 				40961041203F3AE6002DE01F /* emojiCreaterView.swift in Sources */,
 				76F57981203C8B6C00035C3B /* AppDelegate.swift in Sources */,
+				76F5488E204711BC00477D5C /* LowerKeyboardFunction.swift in Sources */,
 				76F57993203C945900035C3B /* EmojiController.swift in Sources */,
+				7680C4752045CBC20039E10A /* emojiCreaterUIDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
