@@ -19,6 +19,7 @@ extension emojiCreaterView {
         symbolTextField.backgroundColor = UIColor.lightGray
         symbolTextField.frame = CGRect(x: 0, y: 100, width: view.frame.width, height: 75)
         symbolTextField.placeholder = "Enter Your New Emoji Here!!!"
+        
         symbolTextField.keyboardType = .default
         symbolTextField.textAlignment = .center
         symbolTextField.textColor = .green
@@ -82,7 +83,9 @@ extension emojiCreaterView {
         addEmojiButton.frame = CGRect(x: (view.frame.width/2) - 100, y: 600, width: 200, height: 75)
         addEmojiButton.titleLabel?.textColor = .yellow
         addEmojiButton.setTitle("Add New Emoji", for: .normal)
+        addEmojiButton.target(forAction: #selector(createEmojiButtonPressed), withSender: addEmojiButton)
         
+
         
         view.addSubview(addEmojiButton)
     }

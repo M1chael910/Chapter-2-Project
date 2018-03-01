@@ -20,7 +20,7 @@ let symbolTextField = UITextField()
 let addEmojiButton = UIButton()
 let emojiUsageTextField = UITextField()
 
-
+let resetButton = UIBarButtonItem()
 
 
 class emojiCreaterView: UIViewController, UITextViewDelegate  {
@@ -29,7 +29,8 @@ class emojiCreaterView: UIViewController, UITextViewDelegate  {
         
         navigationItem.title = "Create A New Emoji"
         
-    
+        navigationItem.rightBarButtonItem = resetButton
+        resetButton.title = "Reset"
         view.backgroundColor = UIColor.cyan
         hideKeyboardWhenTappedAround()
         createEmoijiUsageTextField()
@@ -38,11 +39,14 @@ class emojiCreaterView: UIViewController, UITextViewDelegate  {
         createEmojiDescriptionTextField()
         createSymbolTextField()
         
-
+        
+        
     }
 
     
-    
+    @objc func createEmojiButtonPressed() {
+        performSegue(withIdentifier: segueIdentifier, sender: self)
+    }
     
     
   

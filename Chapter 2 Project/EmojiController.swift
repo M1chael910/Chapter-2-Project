@@ -18,7 +18,7 @@ let EmojiCellIndentifier = "EmojiCellIndentifier"
 class EmojiController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = .blue
+        tableView.backgroundColor = .gray
         createEmojiButton()
         navigationItem.leftBarButtonItem = editButtonItem
         
@@ -59,7 +59,7 @@ class EmojiController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: EmojiCellIndentifier)
         let emoji = emojis[indexPath.row]
-       
+        cell.selectionStyle = UITableViewCellSelectionStyle.default
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
         cell.detailTextLabel?.text = emoji.description
@@ -68,7 +68,9 @@ class EmojiController: UITableViewController {
         return cell
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(detailEmojiView(), animated: true)
+    }
     
     
     
@@ -77,8 +79,12 @@ class EmojiController: UITableViewController {
 
     func createEmojiButton() {
         NewEmojiButton.title = "Add New Emoji"
+        
         NewEmojiButton.target = self 
         NewEmojiButton.action = #selector(MainToDetail)
+        NewEmojiButton.tintColor = .blue
+       
+        
     }
     
    
@@ -89,8 +95,9 @@ class EmojiController: UITableViewController {
     
     
     
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-//    }
+    
+    
+    
+    
 }
 
