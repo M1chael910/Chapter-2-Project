@@ -51,8 +51,7 @@ var emojis: [Emoji] = [
           usage: "homework, studying"),
     Emoji(symbol: "💔", name: "Broken Heart", description: "A red, broken heart.", usage: "extreme sadness"),
     Emoji(symbol: "💤", name: "Snore", description: "Three blue \'z\'s.", usage: "tired, sleepiness"),
-    Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage:
-        "completion"),
+    Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage: "completion"),
     Emoji(symbol: "😭", name: "Crying Emoji", description: "A crying person", usage: "When You are crying or sad")
     
 ]
