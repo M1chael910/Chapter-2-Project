@@ -53,8 +53,8 @@ var emojis: [Emoji] = [
     Emoji(symbol: "💤", name: "Snore", description: "Three blue \'z\'s.", usage: "tired, sleepiness"),
     Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage:
         "completion"),
-    Emoji(symbol: "😭", name: "Crying Emoji", description: "A crying person", usage: "When You are crying or sad")
-    
+    Emoji(symbol: "😢", name: "Crying Emoji", description: "A crying person", usage: "When You are crying or sad")
+
 ]
 
 

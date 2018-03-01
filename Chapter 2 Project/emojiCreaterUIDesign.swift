@@ -63,6 +63,7 @@ extension emojiCreaterView {
     func createEmoijiUsageTextField() {
         emojiUsageTextField.backgroundColor = UIColor.lightGray
         emojiUsageTextField.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 75)
+        
         emojiUsageTextField.keyboardType = .default
         emojiUsageTextField.textAlignment = .center
         emojiUsageTextField.textColor = .green

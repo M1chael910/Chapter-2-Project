@@ -13,12 +13,12 @@ import UIKit
 
 
 
-let emojiDescriptionTextField = UITextView()
+let emojiDescriptionTextField = UITextField()
 let emojiNameTextField = UITextField()
 let symbolTextField = UITextField()
 
 let addEmojiButton = UIButton()
-let emojiUsageTextField = UITextView()
+let emojiUsageTextField = UITextField()
 
 
 
