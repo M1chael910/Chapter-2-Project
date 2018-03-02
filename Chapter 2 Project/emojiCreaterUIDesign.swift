@@ -49,7 +49,7 @@ extension emojiCreaterView {
         
         emojiDescriptionTextField.backgroundColor = UIColor.lightGray
         emojiDescriptionTextField.frame = CGRect(x: 0, y: 300, width: view.frame.width, height: 75)
-        
+        emojiDescriptionTextField.placeholder = "Enter a description of your new Emoji here!!"
         emojiDescriptionTextField.keyboardType = .default
         emojiDescriptionTextField.textAlignment = .center
         emojiDescriptionTextField.textColor = .green
@@ -64,7 +64,7 @@ extension emojiCreaterView {
     func createEmoijiUsageTextField() {
         emojiUsageTextField.backgroundColor = UIColor.lightGray
         emojiUsageTextField.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 75)
-        
+        emojiUsageTextField.placeholder = "Enter the usage for your new emoji here!!"
         emojiUsageTextField.keyboardType = .default
         emojiUsageTextField.textAlignment = .center
         emojiUsageTextField.textColor = .green
@@ -81,9 +81,10 @@ extension emojiCreaterView {
     func createAddEmojiButton() {
         addEmojiButton.backgroundColor = UIColor.lightGray
         addEmojiButton.frame = CGRect(x: (view.frame.width/2) - 100, y: 600, width: 200, height: 75)
-        addEmojiButton.titleLabel?.textColor = .yellow
+        
+        addEmojiButton.titleLabel?.textColor = .white
         addEmojiButton.setTitle("Add New Emoji", for: .normal)
-        addEmojiButton.target(forAction: #selector(createEmojiButtonPressed), withSender: addEmojiButton)
+        addEmojiButton.target(forAction: #selector(addEmoji), withSender: self)
         
 
         

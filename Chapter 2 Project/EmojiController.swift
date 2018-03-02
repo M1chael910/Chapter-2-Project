@@ -16,6 +16,9 @@ let EmojiCellIndentifier = "EmojiCellIndentifier"
 
 
 class EmojiController: UITableViewController {
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .gray
@@ -25,6 +28,12 @@ class EmojiController: UITableViewController {
         navigationItem.rightBarButtonItem = NewEmojiButton
        
         
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
    
@@ -69,9 +78,8 @@ class EmojiController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(detailEmojiView(), animated: true)
+        performSegue(withIdentifier: segueIdentifier, sender: nil)
     }
-    
     
     
     
@@ -82,9 +90,8 @@ class EmojiController: UITableViewController {
         
         NewEmojiButton.target = self 
         NewEmojiButton.action = #selector(MainToDetail)
-        NewEmojiButton.tintColor = .blue
-       
-        
+        NewEmojiButton.style = .plain
+        NewEmojiButton.isEnabled = true
     }
     
    
@@ -92,9 +99,6 @@ class EmojiController: UITableViewController {
         navigationController?.pushViewController(emojiCreaterView(), animated: true)
     }
 
-    
-    
-    
     
     
     

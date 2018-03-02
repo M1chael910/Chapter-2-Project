@@ -12,23 +12,20 @@ import UIKit
 
 
 
-class emojiDetailToMain: UIStoryboardSegue {
+class emojiMainToDetail: UIStoryboardSegue {
     override init(identifier: String?, source: UIViewController, destination: UIViewController) {
 
 
 
         super.init(identifier: "String", source: UIViewController(), destination: UIViewController())
-
+        
 
 
     
 
 
     }
-    let Segue = emojiDetailToMain(identifier: segueIdentifier, source:
-        detailEmojiView(), destination: EmojiController())
     
-
 
 
 
